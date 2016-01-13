@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5573487F-7C15-47FB-B605-5F1C8003B300</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Quiz</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AFCC354E1A70A77652F14A2D1088BA70BF3EA669</key>
+		<string>https://github.com/bignerdranch/iOSBook.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Simple/Solutions/Quiz/Quiz.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AFCC354E1A70A77652F14A2D1088BA70BF3EA669</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bignerdranch/iOSBook.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AFCC354E1A70A77652F14A2D1088BA70BF3EA669</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AFCC354E1A70A77652F14A2D1088BA70BF3EA669</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSBook</string>
+		</dict>
+	</array>
+</dict>
+</plist>

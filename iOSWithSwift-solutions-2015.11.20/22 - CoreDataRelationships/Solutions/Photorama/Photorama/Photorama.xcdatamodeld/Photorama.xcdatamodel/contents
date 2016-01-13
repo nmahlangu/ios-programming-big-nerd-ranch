@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8193.2" systemVersion="14E46" minimumToolsVersion="Xcode 7.0">
+    <entity name="Photo" representedClassName=".Photo" syncable="YES">
+        <attribute name="dateTaken" attributeType="Date" syncable="YES"/>
+        <attribute name="photoID" attributeType="String" syncable="YES"/>
+        <attribute name="photoKey" attributeType="String" syncable="YES"/>
+        <attribute name="remoteURL" attributeType="Transformable" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <relationship name="tags" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="photos" inverseEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="Tag" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="photos" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="tags" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Photo" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="Tag" positionX="-54" positionY="27" width="128" height="75"/>
+    </elements>
+</model>
