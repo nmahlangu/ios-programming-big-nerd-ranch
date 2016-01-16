@@ -58,16 +58,20 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         return nf
     }()
     
-    func textField(textField: UITextField,
-        shouldChangeCharactersInRange range: NSRange,
-        replacementString string: String) -> Bool {
-            
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        let decimalNumbers = NSCharacterSet.decimalDigitCharacterSet()
+        var invalidCharacters: Bool = false
+        for c in string.characters {
+            if String(c) != "." && "\(c)".rangeOfCharacterFromSet(decimalNumbers) == nil {
+                invalidCharacters = true
+                break
+            }
+        }
         let existingTextHasDecimalSeparator = textField.text?.rangeOfString(".")
         let replacementTextHasDecimalSeparator = string.rangeOfString(".")
-            
-        // if no decimal in current text and no decimal in replacement text, return true (and replace the text)
-        if existingTextHasDecimalSeparator != nil && replacementTextHasDecimalSeparator != nil {
-                return false
+        
+        if (existingTextHasDecimalSeparator != nil && replacementTextHasDecimalSeparator != nil) || invalidCharacters != false {
+            return false
         }
         else {
             return true
