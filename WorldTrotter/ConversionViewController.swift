@@ -87,5 +87,4 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
             self.view.backgroundColor = UIColor.darkGrayColor()
         }
     }
-    
 }
