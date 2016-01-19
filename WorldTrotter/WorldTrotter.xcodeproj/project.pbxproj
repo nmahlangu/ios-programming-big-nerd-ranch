@@ -12,6 +12,7 @@
 		E101A6E41C4855F500441BAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E101A6E31C4855F500441BAF /* Assets.xcassets */; };
 		E101A6E71C4855F500441BAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E101A6E51C4855F500441BAF /* LaunchScreen.storyboard */; };
 		E101A6EF1C49A38500441BAF /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101A6EE1C49A38500441BAF /* ConversionViewController.swift */; };
+		E182528B1C4DD78A0097E4C4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182528A1C4DD78A0097E4C4 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E101A6E61C4855F500441BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E101A6E81C4855F500441BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E101A6EE1C49A38500441BAF /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversionViewController.swift; path = ../ConversionViewController.swift; sourceTree = "<group>"; };
+		E182528A1C4DD78A0097E4C4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E182528B1C4DD78A0097E4C4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 		E101A6D01C4855F500441BAF = {
 			isa = PBXGroup;
 			children = (
+				E182528A1C4DD78A0097E4C4 /* MapKit.framework */,
 				E101A6DB1C4855F500441BAF /* WorldTrotter */,
 				E101A6DA1C4855F500441BAF /* Products */,
 			);
@@ -284,6 +288,7 @@
 				E101A6ED1C4855F500441BAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
