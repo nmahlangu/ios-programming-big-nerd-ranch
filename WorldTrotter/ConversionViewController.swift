@@ -77,4 +77,15 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
             return true
         }
     }
+    
+    // make app dark gray after 18:00 hours (6 pm)
+    override func viewWillAppear(animated: Bool) {
+        let date = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components([.Hour, .Minute], fromDate: date)
+        if components.hour >= 18 {
+            self.view.backgroundColor = UIColor.darkGrayColor()
+        }
+    }
+    
 }
