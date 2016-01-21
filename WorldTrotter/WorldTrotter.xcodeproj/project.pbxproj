@@ -14,6 +14,7 @@
 		E101A6EF1C49A38500441BAF /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101A6EE1C49A38500441BAF /* ConversionViewController.swift */; };
 		E182528B1C4DD78A0097E4C4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182528A1C4DD78A0097E4C4 /* MapKit.framework */; };
 		E182528D1C4DDE560097E4C4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182528C1C4DDE560097E4C4 /* MapViewController.swift */; };
+		E182528F1C514C8E0097E4C4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182528E1C514C8E0097E4C4 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E101A6EE1C49A38500441BAF /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversionViewController.swift; path = ../ConversionViewController.swift; sourceTree = "<group>"; };
 		E182528A1C4DD78A0097E4C4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E182528C1C4DDE560097E4C4 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E182528E1C514C8E0097E4C4 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				E101A6DC1C4855F500441BAF /* AppDelegate.swift */,
 				E101A6EE1C49A38500441BAF /* ConversionViewController.swift */,
 				E182528C1C4DDE560097E4C4 /* MapViewController.swift */,
+				E182528E1C514C8E0097E4C4 /* WebViewController.swift */,
 				E101A6E01C4855F500441BAF /* Main.storyboard */,
 				E101A6E31C4855F500441BAF /* Assets.xcassets */,
 				E101A6E51C4855F500441BAF /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				E101A6EF1C49A38500441BAF /* ConversionViewController.swift in Sources */,
 				E182528D1C4DDE560097E4C4 /* MapViewController.swift in Sources */,
 				E101A6DD1C4855F500441BAF /* AppDelegate.swift in Sources */,
+				E182528F1C514C8E0097E4C4 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

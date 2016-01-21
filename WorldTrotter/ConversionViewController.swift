@@ -84,7 +84,7 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         let calendar = NSCalendar.currentCalendar()
         let components = calendar.components([.Hour, .Minute], fromDate: date)
         if components.hour >= 18 {
-            self.view.backgroundColor = UIColor.darkGrayColor()
+            view.backgroundColor = UIColor.darkGrayColor()
         }
     }
 }
