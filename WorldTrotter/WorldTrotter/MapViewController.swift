@@ -52,7 +52,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         // add a button
         let button = UIButton()
-        button.frame = CGRectMake(100, 100, 70, 30)
+        button.frame = CGRectMake(UIScreen.mainScreen().bounds.width - 90, UIScreen.mainScreen().bounds.height - 100, 70, 30)
         button.setTitle("Locate", forState: UIControlState.Normal)
         button.backgroundColor = UIColor.blueColor()
         button.addTarget(self, action: "locationButtonWasPressed:", forControlEvents: UIControlEvents.TouchUpInside)
