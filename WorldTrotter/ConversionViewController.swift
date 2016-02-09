@@ -28,8 +28,8 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func fahrenheitFieldEditingChange(textField: UITextField) {
-        if let text = textField.text, value = Double(text) {
-            fahrenheitValue = value
+        if let text = textField.text, number = numberFormatter.numberFromString(text) {
+            fahrenheitValue = number.doubleValue
         }
         else {
             fahrenheitValue = nil
@@ -59,16 +59,22 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     }()
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        let currentLocale = NSLocale.currentLocale()
+        let decimalSeparator = currentLocale.objectForKey(NSLocaleDecimalSeparator) as! String
+        
+        let existingTextHasDecimalSeparator = textField.text?.rangeOfString(decimalSeparator)
+        let replacementTextHasDecimalSeparator = string.rangeOfString(decimalSeparator)
+        
+        // challenge
         let decimalNumbers = NSCharacterSet.decimalDigitCharacterSet()
         var invalidCharacters: Bool = false
         for c in string.characters {
-            if String(c) != "." && "\(c)".rangeOfCharacterFromSet(decimalNumbers) == nil {
+            if String(c) != decimalSeparator && "\(c)".rangeOfCharacterFromSet(decimalNumbers) == nil {
                 invalidCharacters = true
                 break
             }
         }
-        let existingTextHasDecimalSeparator = textField.text?.rangeOfString(".")
-        let replacementTextHasDecimalSeparator = string.rangeOfString(".")
         
         if (existingTextHasDecimalSeparator != nil && replacementTextHasDecimalSeparator != nil) || invalidCharacters != false {
             return false

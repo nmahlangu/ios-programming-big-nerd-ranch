@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3kQ-cp-VSA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3kQ-cp-VSA">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Convert-->
@@ -17,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eq-0v-KdR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eq-0v-KdR">
                                 <rect key="frame" x="147" y="120" width="306" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,11 +62,13 @@
                             <constraint firstItem="myG-qd-f1s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0hJ-5k-pgI"/>
                             <constraint firstItem="8eq-0v-KdR" firstAttribute="top" secondItem="myG-qd-f1s" secondAttribute="bottom" constant="8" id="1bN-zd-oJb"/>
                             <constraint firstItem="Ff6-ic-NGJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Csu-c4-Wb4"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="8eq-0v-KdR" secondAttribute="trailing" id="E0L-Pg-Bgk"/>
                             <constraint firstItem="WKC-5o-lGn" firstAttribute="top" secondItem="8eq-0v-KdR" secondAttribute="bottom" constant="8" id="H3c-eN-vad"/>
                             <constraint firstItem="8eq-0v-KdR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JcJ-b2-lx5"/>
                             <constraint firstItem="WKC-5o-lGn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KB5-yv-9Jd"/>
                             <constraint firstItem="bcl-e6-nFl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LAR-Im-TsP"/>
                             <constraint firstItem="Ff6-ic-NGJ" firstAttribute="top" secondItem="bcl-e6-nFl" secondAttribute="bottom" constant="8" id="OfE-zY-knO"/>
+                            <constraint firstItem="8eq-0v-KdR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="USd-tf-s06"/>
                             <constraint firstItem="8eq-0v-KdR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g3b-1v-tdz"/>
                             <constraint firstItem="bcl-e6-nFl" firstAttribute="top" secondItem="WKC-5o-lGn" secondAttribute="bottom" constant="8" id="wjU-RE-ANr"/>
                             <constraint firstItem="myG-qd-f1s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="z66-S5-5mG"/>
@@ -127,7 +130,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7P0-Mm-qE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960" y="404"/>
+            <point key="canvasLocation" x="906" y="404"/>
         </scene>
     </scenes>
     <resources>

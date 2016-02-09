@@ -117,6 +117,8 @@ default:
 }
 
 
-
+let currentLocale = NSLocale.currentLocale()
+let isMetric = currentLocale.objectForKey(NSLocaleUsesMetricSystem)?.boolValue
+let currencySymbol = currentLocale.objectForKey(NSLocaleCurrencyCode)
 
 
