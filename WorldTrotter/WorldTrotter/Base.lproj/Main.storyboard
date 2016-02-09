@@ -24,13 +24,13 @@
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKC-5o-lGn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKC-5o-lGn">
                                 <rect key="frame" x="241" y="171" width="119" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcl-e6-nFl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcl-e6-nFl">
                                 <rect key="frame" x="242" y="222" width="117" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,7 +49,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="KI3-WQ-FKF"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ff6-ic-NGJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ff6-ic-NGJ">
                                 <rect key="frame" x="173" y="314" width="254" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,12 +64,18 @@
                             <constraint firstItem="Ff6-ic-NGJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Csu-c4-Wb4"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="8eq-0v-KdR" secondAttribute="trailing" id="E0L-Pg-Bgk"/>
                             <constraint firstItem="WKC-5o-lGn" firstAttribute="top" secondItem="8eq-0v-KdR" secondAttribute="bottom" constant="8" id="H3c-eN-vad"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bcl-e6-nFl" secondAttribute="trailing" id="J74-T4-me1"/>
                             <constraint firstItem="8eq-0v-KdR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JcJ-b2-lx5"/>
                             <constraint firstItem="WKC-5o-lGn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KB5-yv-9Jd"/>
                             <constraint firstItem="bcl-e6-nFl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LAR-Im-TsP"/>
                             <constraint firstItem="Ff6-ic-NGJ" firstAttribute="top" secondItem="bcl-e6-nFl" secondAttribute="bottom" constant="8" id="OfE-zY-knO"/>
                             <constraint firstItem="8eq-0v-KdR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="USd-tf-s06"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="WKC-5o-lGn" secondAttribute="trailing" id="XIC-Wh-RqM"/>
+                            <constraint firstItem="Ff6-ic-NGJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dIv-ol-j2o"/>
                             <constraint firstItem="8eq-0v-KdR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g3b-1v-tdz"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Ff6-ic-NGJ" secondAttribute="trailing" id="peu-uH-wfz"/>
+                            <constraint firstItem="WKC-5o-lGn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sjD-wi-MVi"/>
+                            <constraint firstItem="bcl-e6-nFl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tvA-fb-dZL"/>
                             <constraint firstItem="bcl-e6-nFl" firstAttribute="top" secondItem="WKC-5o-lGn" secondAttribute="bottom" constant="8" id="wjU-RE-ANr"/>
                             <constraint firstItem="myG-qd-f1s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="z66-S5-5mG"/>
                         </constraints>
